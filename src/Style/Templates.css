@@ -1,0 +1,24 @@
+/* .templateMain {
+    padding: 100px 0;
+} */
+
+.bnr_hding {
+    width: 100%;
+    /* border: 2px solid; */
+    padding: 0 10rem;
+}
+
+
+.tempFilter_Nab .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+
+    .bnr_hding {
+        padding: 0;
+    }
+}
