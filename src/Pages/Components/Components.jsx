@@ -1,29 +1,16 @@
 import React from 'react'
-import Sidebar from './Sidebar'
 import '../../Style/Components.css'
-import AsideAdd from './AsideAdd'
-
-// import { Tab, Tabs } from 'react-bootstrap';
-
-
-// const SidebarTabs = ({ data }) => {
-//   return (
-//     <Tabs defaultActiveKey={0} id="sidebar-tabs">
-//       {data.map((tab, index) => (
-//         <Tab key={index} eventKey={index} title={tab.name}>
-//           <p>This is the content for {tab.name}</p>
-//         </Tab>
-//       ))}
-//     </Tabs>
-//   );
-// };
-
-
+import Accordian from './Accordian'
+import { useState } from 'react';
+import Tab from 'react-bootstrap/Tab';
+import Col from 'react-bootstrap/Col';
+import Nav from 'react-bootstrap/Nav';
+import Row from 'react-bootstrap/Row';
 
 const Components = () => {
-
+  const [key, setKey] = useState('home');
   const sidebarData = [
-    { name: 'Accordian', link: '/components/accordians' },
+    { name: 'Accordian', link: <Accordian /> },
     { name: 'Buttons', link: '/components/buttons' },
     { name: 'Card', link: '/components/card' },
     { name: 'Carousel', link: '/components/carousel' },
@@ -35,31 +22,30 @@ const Components = () => {
   return (
     <>
 
-      <div className="components-wrapper">
-        <div class="row component-inner">
-          <div class="col-2 sidebar-wrapper">
-            {sidebarData.map((data) => {
-              return (<Sidebar link={data.link} name={data.name} />)
-            })}
-          </div>
-          <div class="col-8">
-            Column
-          </div>
+      <Tab.Container id="left-tabs-example" defaultActiveKey="Accordian">
+        <Row>
+          {sidebarData.map((data) => {
+            return (
+              <>
+                <Col sm={3}>
+                  <Nav variant="pills" className="flex-column">
+                    <Nav.Item>
+                      <Nav.Link eventKey={data.name}>{data.name}</Nav.Link>
+                    </Nav.Item>
+                  </Nav>
+                </Col>
+                <Col sm={9}>
+                  <Tab.Content>
+                    <Tab.Pane eventKey={data.name}>{data.link}</Tab.Pane>
+                  </Tab.Content>
+                </Col>
 
+              </>
+            )
+          })}
 
-          {/* <div className="col-10 component-sidebar">
-            <SidebarTabs data={sidebarData} />
-          </div> */}
-
-          <div className="col-10">
-
-         
-          </div>
-          <div class="col-2 components-adds">
-            <AsideAdd />
-          </div>
-        </div>
-      </div>
+        </Row>
+      </Tab.Container>
     </>
   )
 }

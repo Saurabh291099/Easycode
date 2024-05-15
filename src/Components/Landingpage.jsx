@@ -12,7 +12,7 @@ import '../Style/Landing.css'
 import Contact from './Contact';
 // import TemplateFilter from '../Pages/Template/TemplateFilter';
 // import bannerimg from '../Images/banner.png'
-
+import BlogCard from '../Pages/Blogs/BlogCard'
 
 const Landingpage = () => {
 
@@ -44,6 +44,10 @@ const Landingpage = () => {
                         </Row>
                     </Container>
                 </div>
+
+                <h3 className='text-center  mt-4'>Recent Blogs</h3>
+                <p className='text-center mb-4'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, aperiam?</p>
+                <BlogCard />
 
                 <Contact />
             </div>

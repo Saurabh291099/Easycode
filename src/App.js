@@ -16,6 +16,8 @@ import TempPreview from './Pages/Template/TempPreview';
 import Components from './Pages/Components/Components';
 import Accordian from './Pages/Components/Accordian';
 import Buttons from './Pages/Components/Buttons';
+import Blog from './Pages/Blogs/Blog';
+import BlogPreview from './Pages/Blogs/BlogPreview';
 
 
 function App() {
@@ -34,8 +36,10 @@ function App() {
 
           {/* Components Routes  */}
           <Route path="/components" element={<Components />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/components/accordians" element={<Accordian />} />
           <Route path="/components/buttons" element={<Buttons />} />
+          <Route path="/blog/blogname" element={<BlogPreview />} />
 
 
         </Routes>

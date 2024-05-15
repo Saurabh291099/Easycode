@@ -60,6 +60,7 @@ const Header = () => {
                         <Link exact to='/projects'>Projects</Link>
                         <Link exact to='/templates'>Templates</Link>
                         <Link exact to='/components'>Components</Link>
+                        <Link exact to='/blog'>Blog</Link>
                         <Link exact to='/contact'>Contact</Link>
                     </div>
                     <Link className='strbtn' to='/contact'>Hire Us</Link>
