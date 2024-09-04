@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Card = ({ templateData }) => {
     // console.log(templateData)
@@ -21,8 +21,8 @@ const Card = ({ templateData }) => {
                                 <p class="card-text">{price}</p>
 
                                 <div className='cardbtn'>
-                                    {/* <Link exact to="/templates/preview" class="btn btn-primary">{previewbtn}</Link>
-                <Link href="/" class="btn btn-primary text-end">{buybtn}</Link> */}
+                                    <Link exact to="/templates/preview" class="btn btn-primary">Preview</Link>
+                                    <Link href="/" class="btn btn-primary text-end">Buy</Link>
                                 </div>
 
                             </div>

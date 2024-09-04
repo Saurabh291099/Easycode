@@ -4,7 +4,7 @@ const Banner = () => {
     return (
         <>
 
-            <div className='coman-bnr w-100' style={{ border: "2px solid red" }}>
+            <div className='coman-bnr w-100'>
                 <h1 className='bnr-heading'>Blog</h1>
 
                 <img src={photo} alt="banner image" />

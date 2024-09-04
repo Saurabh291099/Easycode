@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // import pic from '../Images/photo.jpg'
 // import { Button } from 'react-bootstrap';
-import Card from './Card';
+import Card from '.././Pages/Template/Card';
 import TempFilterApi from './TempFilterApi';
 
 // Import CSS

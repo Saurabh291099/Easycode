@@ -1,6 +1,7 @@
 import React from 'react'
 // import TempFilterApi from '../../Components/TempFilterApi.js';
 
+
 const TemplateFilter = ({ filterItem, filterData }) => {
     // const [templateData, settemplateData] = useState(TempFilterApi)
 
@@ -16,20 +17,13 @@ const TemplateFilter = ({ filterItem, filterData }) => {
         <>
             <nav className="tempFilter_Nab">
                 <div className="btn-group">
-
-
-                    {/* <button className="btn-items" onClick={() => settemplateData(TempFilterApi)}>All</button> */}
-
-
-
-                    {filterData.map((curElem) => {
+                    {filterData.map((curElem, index) => {
                         return <>
-
-                            <button className="btn-items" onClick={() => filterItem(curElem)}>{curElem}</button>
+                            <button key={index} className="btn-items" onClick={() => filterItem(curElem)}>{curElem}</button>
                         </>
                     })}
 
-{/* 
+                    {/* <button className="btn-items" onClick={() => settemplateData(TempFilterApi)}>All</button>
                     <button className="btn-items" onClick={() => filterItem("restaurant")}>Reastaurants</button>
                     <button className="btn-items" onClick={() => filterItem("portfolio")}>Portfolio</button>
                     <button className="btn-items" onClick={() => filterItem("construction")}>Construction</button>

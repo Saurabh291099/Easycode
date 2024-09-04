@@ -4,8 +4,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // import pic from '../../Images/photo.jpg'
 // import { Button } from 'react-bootstrap';
-import Card from '../../Components/Card';
-import '../../Style/Templates.css'
+import Card from './Card.jsx';
+import './Templates.css'
 import TempFilterApi from '../../Components/TempFilterApi.js';
 import TemplateFilter from './TemplateFilter.jsx';
 
@@ -18,7 +18,7 @@ const uniqueList = [ "All",
   ),
 ];
 
-console.log(uniqueList);
+// console.log(uniqueList);
 
 const Templates = (category) => {
   const [templateData, settemplateData] = useState(TempFilterApi)

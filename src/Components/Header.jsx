@@ -1,12 +1,13 @@
-// import React, { useState, useEffect } from 'react';
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 // import { MdDarkMode } from 'react-icons/md';
+import { NavLink } from 'react-router-dom';
 import '../Style/NavFoot.css'
 import { Nav } from 'react-bootstrap';
 const Header = () => {
     const [isSticky, setSticky] = useState(false);
-
+    const [isOpen, setIsOpen] = useState(false)
 
     useEffect(() => {
         const handleScroll = () => {
@@ -25,48 +26,37 @@ const Header = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-    // const [isNavbarBlurred, setIsNavbarBlurred] = useState(false);
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         const scrollY = window.scrollY;
-    //         const threshold = 100;
 
-    //         setIsNavbarBlurred(scrollY > threshold);
-    //     };
-
-    //     window.addEventListener('scroll', handleScroll);
-
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, []);
     return (
         < >
-            {/* className="navbar_main" */}
-            {/* <div className="container">
-                <nav>
-
-                    <div className="rytnav nav_Link">
-                    </div>
-                </nav>
-            </div> */}
-            {/* className="navbar"   */}
             <Nav className={isSticky ? 'sticky-navbar' : 'navbar'}>
                 <div className="container navbar_main">
+                    {/* Logo */}
                     <Link className='logo'>CodeWithSharmaJi</Link>
-                    {/* <div className="wrapper-nav"> */}
-                    <div className="midnav nav_Link">
-                        <Link exact to='/'>Home</Link>
-                        <Link exact to='/projects'>Projects</Link>
-                        <Link exact to='/templates'>Templates</Link>
-                        <Link exact to='/components'>Components</Link>
-                        <Link exact to='/blog'>Blog</Link>
-                        <Link exact to='/contact'>Contact</Link>
+
+                    {/* Hamburger Icon (visible only on small screens) */}
+                    <button onClick={() => setIsOpen(!isOpen)} className='fs-2 d-lg-none text-light border-0 bg-transparent'>
+                        {isOpen ? 'X' : '☰'}
+                    </button>
+
+                    {/* Navigation Menu */}
+                    <div className={`${isOpen ? 'd-flex' : 'd-none'} d-lg-flex col-12 col-lg-9 justify-content-end`}>
+                        <div className="nav_Link">
+                            <NavLink exact to='/' activeClassName='active' onClick={() => setIsOpen(false)}>Home</NavLink>
+                            <NavLink exact to='/projects' activeClassName='active' onClick={() => setIsOpen(false)}>Projects</NavLink>
+                            <NavLink exact to='/templates' activeClassName='active' onClick={() => setIsOpen(false)}>Templates</NavLink>
+                            <NavLink exact to='/components' activeClassName='active' onClick={() => setIsOpen(false)}>Components</NavLink>
+                            <NavLink exact to='/blog' activeClassName='active' onClick={() => setIsOpen(false)}>Blog</NavLink>
+                            <NavLink exact to='/contact' activeClassName='active' onClick={() => setIsOpen(false)}>Contact</NavLink>
+                        </div>
+
+                        {/* Hire Us Button */}
+                        {/* <Link className='strbtn' to='/contact' onClick={() => setIsOpen(false)}>Hire Us</Link> */}
                     </div>
-                    <Link className='strbtn' to='/contact'>Hire Us</Link>
-                    {/* </div> */}
                 </div>
             </Nav>
+
+
 
         </>
 

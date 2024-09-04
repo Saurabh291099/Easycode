@@ -15,6 +15,8 @@ a {
     width: 100%;
     background-color: #555;
     z-index: 5;
+    padding: 10px;
+
 }
 
 .navbar_main {
@@ -23,10 +25,9 @@ a {
     width: 100%;
 }
 
-.wrapper-nav {
+.nav-wrapper{
     display: flex;
     justify-content: space-between;
-    /* width:; */
 }
 
 .nav_Link {
@@ -34,10 +35,14 @@ a {
     justify-content: center;
     align-items: center;
     width: auto;
+    padding: 10px;
+    gap: 50px;
 }
 
 .nav_Link a {
     color: #fff;
+    text-decoration: none;
+    /* padding: 10px; */
 }
 
 .nav_Link a:hover {
@@ -49,17 +54,23 @@ a {
     color: #fff;
 }
 
-.midnav {
-    padding: 10px;
-    gap: 50px;
+
+.nav_Link a.active {
+    color: #ffffff9d; /* Active link color (e.g., blue) */
+    font-weight: bold; /* Make the active link bold */
+    /* background-color: #f8f9fa; Light background for active link */
 }
+
+
+/* .midnav {
+    
+} */
 
 .rytnav {
     gap: 10px;
 }
 
 .strbtn {
-    /* border: 2px solid yellow; */
     padding: 10px;
     background: #ffcd6b;
     border: 0;

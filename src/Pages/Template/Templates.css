@@ -1,0 +1,42 @@
+
+.bnr_hding {
+    width: 100%;
+    padding: 0 10rem;
+}
+
+.btn-items {
+    border: 0;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    font-weight: 500;
+
+}
+
+.btn-items:hover {
+    background: gray;
+    color: #fff;
+}
+
+.btn-items.active {
+    color: #ffffff9d; 
+}
+
+.tempFilter_Nab .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card_img{
+    height: 250px;
+    max-height: 300px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .bnr_hding {
+        padding: 0;
+    }
+}
