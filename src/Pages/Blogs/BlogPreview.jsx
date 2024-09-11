@@ -2,9 +2,14 @@ import React from 'react'
 
 const BlogPreview = () => {
   return (
-    <div className='container my-4 py-4'>
-      hello blog
-    </div>
+    <>
+
+      <div className='container'>
+        <div className='blog-prev text-center h-100' style={{ border: "1px solid red" }}>
+          <p>hello blogs</p>
+        </div>
+      </div>
+    </>
   )
 }
 
