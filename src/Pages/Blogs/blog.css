@@ -1,0 +1,8 @@
+.blog-prev{
+    min-height: 90vh;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    text-align: justify;
+}
+
