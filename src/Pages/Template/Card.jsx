@@ -22,7 +22,7 @@ const Card = ({ templateData }) => {
 
                                 <div className='cardbtn'>
                                     <Link exact to="/templates/preview" class="btn btn-primary">Preview</Link>
-                                    <Link href="/" class="btn btn-primary text-end">Buy</Link>
+                                    <Link exact href="/" class="btn btn-primary text-end">Buy</Link>
                                 </div>
 
                             </div>

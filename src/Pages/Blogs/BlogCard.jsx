@@ -38,7 +38,7 @@ const BlogCard = () => {
     },
     ]
     return (
-        <div>
+        <>
             <div className="blog-div d-flex flex-wrap gap-5">
 
                 {BlogData.map((data, i) => {
@@ -61,7 +61,7 @@ const BlogCard = () => {
                 })}
 
             </div>
-        </div>
+        </>
     )
 }
 

@@ -7,7 +7,7 @@ const Blog = () => {
 
     return (
         <>
-            <Banner />
+            <Banner bannerHeading='Blog Heading' />
 
             <div className='container my-4'>
                 <BlogCard />
