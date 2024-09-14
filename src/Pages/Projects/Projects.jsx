@@ -9,37 +9,37 @@ function Projects() {
     {
       previewLink: '/projects',
       githublink: '/projects',
-      heading: 'project1',
+      heading: 'Project1',
       text: 'desc'
     },
     {
       previewLink: '/projects',
       githublink: '/projects',
-      heading: 'project2',
+      heading: 'Project2',
       text: 'desc'
     },
     {
       previewLink: '/projects',
       githublink: '/projects',
-      heading: 'project3',
+      heading: 'Project3',
       text: 'desc'
     },
     {
       previewLink: '/projects',
       githublink: '/projects',
-      heading: 'project4',
+      heading: 'Project4',
       text: 'desc'
     },
     {
       previewLink: '/projects',
       githublink: '/projects',
-      heading: 'project5',
+      heading: 'Project5',
       text: 'desc'
     },
     {
       previewLink: '/projects',
       githublink: '/projects',
-      heading: 'project6',
+      heading: 'Project6',
       text: 'desc'
     },
     {
@@ -69,8 +69,8 @@ function Projects() {
                 <Card key={index} style={{ width: '18rem' }}>
                   <Card.Img variant="top" src={photo} />
                   <Card.Body>
-                    <Card.Title>{data.heading}</Card.Title>
-                    <Card.Text>
+                    <Card.Title className='text-capitalize'>{data.heading}</Card.Title>
+                    <Card.Text className='text-capitalize'>
                       {data.text}
                     </Card.Text>
 
