@@ -45,7 +45,7 @@ const Header = () => {
                             <NavLink exact to='/' activeClassName='active' onClick={() => setIsOpen(false)}>Home</NavLink>
                             <NavLink exact to='/projects' activeClassName='active' onClick={() => setIsOpen(false)}>Projects</NavLink>
                             <NavLink exact to='/templates' activeClassName='active' onClick={() => setIsOpen(false)}>Templates</NavLink>
-                            <NavLink exact to='/components' activeClassName='active' onClick={() => setIsOpen(false)}>Components</NavLink>
+                            <NavLink exact to='/practice' activeClassName='active' onClick={() => setIsOpen(false)}>Practice</NavLink>
                             <NavLink exact to='/blog' activeClassName='active' onClick={() => setIsOpen(false)}>Blog</NavLink>
                             <NavLink exact to='/contact' activeClassName='active' onClick={() => setIsOpen(false)}>Contact</NavLink>
                         </div>

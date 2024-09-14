@@ -53,8 +53,8 @@ const BlogPreview = () => {
               <Link>Best Free Headless CMS Software - Features and Pricing 2022</Link>
               <Link>Top 10 Features of ReactJS for Web Developers</Link>
               <Link>Best Free Headless CMS Software - Features and Pricing 2022</Link>
-            </aside></Col>
-
+            </aside>
+            </Col>
         </Row>
 
       </Container>

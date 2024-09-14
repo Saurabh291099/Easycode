@@ -57,7 +57,7 @@ function Projects() {
 
       <Banner bannerHeading='Project Heading' />
 
-      <Container className='project_main py-4' style={{ minHeight: '100vh' }}>
+      <Container className='project-main py-4' style={{ minHeight: '100vh' }}>
         <h3>All Projects</h3>
 
         <div className="blog-div d-flex flex-wrap gap-5 my-4">

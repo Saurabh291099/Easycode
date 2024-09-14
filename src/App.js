@@ -13,11 +13,10 @@ import {
 import Projects from './Pages/Projects/Projects';
 import Templates from './Pages/Template/Templates';
 import TempPreview from './Pages/Template/TempPreview';
-import Components from './Pages/Components/Components';
-import Accordian from './Pages/Components/Accordian';
-import Buttons from './Pages/Components/Buttons';
 import Blog from './Pages/Blogs/Blog';
 import BlogPreview from './Pages/Blogs/BlogPreview';
+import Practice from './Pages/Practice/Practice';
+import Practicepreview from './Pages/Practice/Practicepreview';
 
 
 function App() {
@@ -35,10 +34,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
 
           {/* Components Routes  */}
-          <Route path="/components" element={<Components />} />
+          <Route path="/practice" element={<Practice />} />
+          <Route path="/practice/preview" element={<Practicepreview />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/components/accordians" element={<Accordian />} />
-          <Route path="/components/buttons" element={<Buttons />} />
           <Route path="/blog/blogname" element={<BlogPreview />} />
 
 
