@@ -8,6 +8,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background: #1e1e1c; */
+  /* background: #0E1317; */
+  background: #111927;
+  color: #fff;
 }
 
 .App {

@@ -24,6 +24,22 @@
     text-align: center;
     width: 55rem;
     /* position: absolute; */
+    opacity: 2;
+    z-index: 1;
+}
+
+.banner_text h1 {
+    font-family: "ITC Avant Garde Gothic Bold", sans-serif;
+    font-weight: 700;
+    font-size: 3.25rem;
+}
+.banner_text p {
+    font-family: "ITC Avant Garde Gothic Bold", sans-serif;
+    font-size: 1.08rem;
+    opacity: 1;
+    color: rgb(149 156 177);
+    word-spacing: 2px;
+    line-height: 1.6rem;
 }
 
 .lnd-col {

@@ -70,7 +70,7 @@ function Footer() {
                                             <i class="fa-solid fa-phone"></i>
                                         </div>
                                         <div class="footer__area-widget-contact-item-content">
-                                            <span><Link to="tel:+123(458)585568">+91 97561 43731</Link></span>
+                                            <span><Link to="tel:">+91 97561 437**</Link></span>
                                         </div>
                                     </div>
                                 </div>
@@ -108,7 +108,7 @@ function Footer() {
                 <div className="copyright__area">
 
                     <div class="container ">
-                        <p>Copyright © 2023 <Link to="/">CodeWithSharmaJi</Link></p>
+                        <p>Copyright © 2024 <Link to="/">CodeWithSharmaJi</Link></p>
                     </div>
                 </div>
             </div>

@@ -11,7 +11,9 @@
     align-items: center;
     color: #fff;
     /* background: #151515; */
-    background-color: #1c1c1c;
+    /* background-color: #1c1c1c; */
+
+
 }
 
 .foot-in {
@@ -44,10 +46,14 @@
 }
 
 .footer__area {
-    background: #0E1317;
+    /* background: #0E1317; */
+    opacity: 1;
+    background-color: rgba(17, 29, 50, 0.773);
     color: #adaaaa;
     font-weight: 400;
     font-family: "Open Sans";
+    padding-top: 90px;
+    border-top: 1px solid #e5e7eb83;
 }
 
 .footer__area a {
@@ -97,10 +103,4 @@
 .copyright__area p {
     margin: 0;
     padding: 0;
-}
-
-
-.footer__area {
-    background: #0E1317;
-    padding-top: 90px;
 }
